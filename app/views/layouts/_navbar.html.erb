@@ -1,0 +1,5 @@
+<%= link_to "Tasklist", tasks_path %>
+<% if logged_in? %>
+  <%= link_to "new task", new_task_path %>
+  <%= link_to "Log out", logout_path, method: :delete %>
+<% end %>
